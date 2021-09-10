@@ -21,7 +21,7 @@ def instaspeak():
     total = 0
     @client.event
     async def on_ready():
-        vca = client.get_channel(569552617370419268)
+        vca = client.get_channel()
         vc = await vca.connect()
 
     @client.event
@@ -47,7 +47,7 @@ def instaspeak():
                     await vc.disconnect()
 
             if total ==0:
-                vca = client.get_channel(569552617370419268)
+                vca = client.get_channel()
                 vc = await vca.connect()
 
             url = download_video(message.content.replace("-p",""))
