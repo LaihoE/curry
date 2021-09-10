@@ -61,8 +61,7 @@ def instaspeak():
             while vc.is_playing():
                 await sleep(1)
 
-        if "-p" in message.content:
-            print(message.content)
+        
     client.run(token)
 
 instaspeak()
